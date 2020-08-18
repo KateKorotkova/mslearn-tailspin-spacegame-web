@@ -11,6 +11,8 @@ variables:
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
   dotnetSdkVersion: '3.1.300'
 
+#If you have a single stage and a single job, you can omit the stages and jobs keywords and directly specify the steps keyword.
+
 steps:
 - task: UseDotNet@2
   displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
